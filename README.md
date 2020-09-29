@@ -11,7 +11,7 @@ pip install baidu-aip
 
 ## Normal Accuracy (50,000 quota) VS High Accuracy (500 quota)
 
-To use high accuracy, remove the comment and delete basicGeneral.
+basicGeneral is normal accuracy. basicAccurate is high accuracy. Only use one of them.
 ```python
 result = client.basicGeneral(image)
 result = client.basicAccurate(image)
