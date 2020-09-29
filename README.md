@@ -36,7 +36,7 @@ Then click the blue button from here https://ai.baidu.com/tech/ocr/general. Then
 Download VideoSubFinder. Go to \VideoSubFinder_4.30_x64\Release_x64\settings, open general.cfg in Notepad++. Change min_sum_color_diff = 800 (high number reduces amount of blank images), vedges_points_line_error = 0.15 (the default is 0.3 which works for most videos but sometimes it misses subtitles so I use 0.15) (low number will capture all subtitles with short gaps, but more duplicate images)
 Make a box big enough for two lines of subtitles. Run search. https://i.imgur.com/TYOKmu5.jpg. After scanning, RGBImages folder is now full.
 
-The first method is the most automated without merging images. But it quickly consumes your 500 image quota which resets at midnight.
+METHOD 1: the most automated without merging images. But it quickly consumes your 500 image quota which resets at midnight.
 ```python
 python baiduhigh.py
 ```
@@ -51,7 +51,7 @@ Btw mpv is a useful video player because by pressing ctrl right arrow, it will t
 Translating from Chinese to English
 In my opinion, https://www.deepl.com/translator is the most accurate. Open Subtitle Edit > File > Export as txt. Copy and paste into Deepl. Copy and paste the English results in another txt file. Open Subtitle Edit, drag and drop the English txt file. File > Import time codes > select the srt. If the number of timestamps and lines don't match, then there are blank lines somewhere.
 
-The second method requires additional effort and more software. A really long picture still counts as one images so it's unlikely to go over your quota.
+METHOD 2: requires additional effort and more software. A really long picture still counts as one images so it's unlikely to go over your quota.
 1. Create empty sub in VideoSubFinder
 2. Bulk crop images with IrfanView.
 3. Merge with moveandmerge.py
