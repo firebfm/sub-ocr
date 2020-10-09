@@ -29,8 +29,9 @@ Use baiduocr.py for everything else including merged images. Results are saved i
 
 ## Obtain your API_KEY (requires phone #)
 Instructions in Chinese https://ai.baidu.com/ai-doc/REFERENCE/Ck3dwjgn3
-My instructions: Follow method 2 from here https://www.infinityfolder.com/how-to-create-a-baidu-account-from-outside-china/. Skip the adding email part.
-Then click the blue button from here https://ai.baidu.com/tech/ocr/general. Then https://imgur.com/a/v6PIjUP
+~~My instructions: Follow method 2 from here https://www.infinityfolder.com/how-to-create-a-baidu-account-from-outside-china/. Skip the adding email part.~~
+Then click the blue button from here https://ai.baidu.com/tech/ocr/general. Then https://imgur.com/a/v6PIjUP.
+Edit as of 2020, new Baidu account creation has been disabled for overseas users...
 
 ## Complete guide on how to extract subtitles with VideoSubFinder
 Download VideoSubFinder. Go to \VideoSubFinder_4.30_x64\Release_x64\settings, open general.cfg in Notepad++. Change min_sum_color_diff = 800 (high number reduces amount of blank images), vedges_points_line_error = 0.15 (the default is 0.3 which works for most videos but sometimes it misses subtitles so I use 0.15) (low number will capture all subtitles with short gaps, but more duplicate images)
@@ -55,8 +56,8 @@ METHOD 2: requires additional effort and more software. A really long picture st
 1. Create empty sub in VideoSubFinder
 2. Bulk crop images with IrfanView.
 3. Merge with moveandmerge.py
-4. OCR with baiduocr.py (all results saved in a single txt file)
-5. Combine txt and srt in Aegisub with ctrl shift v
+4. OCR with baiduocr.py (all results saved in a single txt file) or QQ OCR https://ai.qq.com/product/ocr.shtml#common (remove numbers with regular expressions in Notepad++)
+5. First type /N in between double lines. Make sure the # of lines match in Notepad++. Combine txt and srt in Aegisub with ctrl shift v
 6. Clean up in SubtitleEdit.
 
 ## FAQ
