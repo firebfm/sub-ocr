@@ -57,7 +57,7 @@ METHOD 2: requires additional effort and more software. A really long picture st
 2. Bulk crop images with IrfanView.
 3. Merge with moveandmerge.py
 4. OCR with baiduocr.py (all results saved in a single txt file) or QQ OCR https://ai.qq.com/product/ocr.shtml#common (remove numbers with regular expressions in Notepad++)
-5. First type /N in between double lines. Make sure the # of lines match in Notepad++. Combine txt and srt in Aegisub with ctrl shift v
+5. Type /N in between double lines. Make sure the # of lines match in Notepad++. Recommended image viewer is Honeyview because it displays the current image count. Combine txt and srt in Aegisub with ctrl shift v
 6. Clean up in SubtitleEdit.
 
 ## FAQ
